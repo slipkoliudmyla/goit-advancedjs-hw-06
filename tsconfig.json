@@ -7,12 +7,19 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "lib": ["dom", "ES2021"],
+    "lib": [
+      "dom",
+      "ES2021"
+    ],
     "module": "es2020",
     "skipLibCheck": true,
     "strictNullChecks": true,
     "target": "es2019",
-    "sourceMap": true
+    "sourceMap": true,
+    "strict": true,
+    "noEmitOnError": true
   },
-  "include": ["**/*.ts"]
+  "include": [
+    "src/**/*.ts"
+  ]
 }

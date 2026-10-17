@@ -176,7 +176,7 @@ function createOrUpdateUser(initialValues: User) {
   // Оновлення користувача
 }
 
-createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: 'learner@example.com' });
 ```
 ### Завдання 7
 У вас є перелік UserRole, який використовується для класифікації користувачів у вашому додатку. Ви хочете створити об'єкт RoleDescription, який зіставлятиме кожну роль користувача з її описом.

@@ -176,7 +176,7 @@ function createOrUpdateUser(initialValues: User) {
   // Оновлення користувача
 }
 
-createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: 'learner@example.com' });
 ```
 ### Завдання 7
 У вас є перелік UserRole, який використовується для класифікації користувачів у вашому додатку. Ви хочете створити об'єкт RoleDescription, який зіставлятиме кожну роль користувача з її описом.
@@ -215,3 +215,17 @@ type Form = {
 // Реалізуйте Params так, щоб унеможливити поле 'errors' з типу Form
 type Params = Form;
 ``
+
+## Запуск готового рішення
+
+Встановлення: `pnpm install --frozen-lockfile`. Перевірка: `pnpm run typecheck`. Збірка: `pnpm run build`.
+Файли рішення: `src/baseTypes/1.ts`–`9.ts`, `src/generic/1.ts`–`8.ts`.
+Увімкнено `strict: true`; JS і source maps створюються в `dist`.
+`any` використано лише там, де завдання прямо вимагає довільної зміни типу.
+`unknown` звужено через `typeof`; `Pick`, `Partial`, `Record`, `Omit` описують потрібні форми даних.
+`merge` зберігає поведінку Object.assign із шаблону: змінює перший об’єкт; для однойменних полів перемагає другий.
+Приклад пароля з умови прибрано. Функція оновлення користувача — лише вправа на тип Partial, без запиту до сервера.
+
+Репозиторій: https://github.com/slipkoliudmyla/goit-advancedjs-hw-06
+Дедлайн LMS: 25 жовтня 2026, 23:45 (Europe/Kiev за контекстом користувачки).
+ZIP готується поряд із репозиторієм. Прикріплення та здачу на GoIT виконує Людмила.

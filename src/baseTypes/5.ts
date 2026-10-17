@@ -1,7 +1,9 @@
-/* 
-  Як ви визначите змінну в TypeScript, яка може приймати рядок або число (union type)? 
-  І так само визначте змінну, яка може приймати тільки одне з двох рядкових значень: 'enable' або 'disable' (literal type)?
-*/
+let union: string | number;
+let literal: 'enable' | 'disable';
 
-let union;
-let literal;
+union = 'Text';
+union = 50;
+literal = 'enable';
+literal = 'disable';
+
+export {};
